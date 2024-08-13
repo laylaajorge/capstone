@@ -4,7 +4,9 @@ import React from 'react';
 function Home({setView}){
 
   return(
- /*Adapted and customised from Bootstrap*/
+ /*Adapted and customised from Bootstrap
+   Upon each nav item when clicked it will change the use state from the default home to that specific nav item
+ */
  <nav className="navbar navbar-expand-lg bg-body-tertiary" style={{backgroundColor: "#FFF5E1"}}>
   <div className="container-fluid">
     <a className="navbar-brand" href="#"><h1>Science is Tough</h1></a>
@@ -14,7 +16,7 @@ function Home({setView}){
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-        <a className="nav-link" href="#" onClick={()=>setView('home')}>Home</a>
+        <a className="nav-link" href="#" onClick={()=>setView('home')}>Home</a> 
         </li>
         <li className="nav-item">
         <a className="nav-link" href="#" onClick={()=>setView('favourites')}>Favourites</a>
