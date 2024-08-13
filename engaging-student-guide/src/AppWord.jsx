@@ -60,7 +60,7 @@ function AppWord() {
     4: Array.from({ length: wordLength }).fill(""),
     5: Array.from({ length: wordLength }).fill(""),
   });
-  const [isModalVisible, setModalVisible] = useState(false);
+  const [winner, setWin] = useState("");
   
 
   let letterIndex = useRef(0);
@@ -68,7 +68,7 @@ function AppWord() {
 
   const win = () => {
     document.removeEventListener("keydown", handleKeyDown);
-    setModalVisible(true);
+    setWin("You win! +100 coins");
   };
 
   const submit = () => {
@@ -204,6 +204,7 @@ function AppWord() {
     <>
       <Main>
         <Header>WORDLE</Header>
+        {winner && <h2>{winner}</h2>}
         <GameSection>
           <TileContainer>
             {Object.values(guesses).map((word, wordIndex) => (

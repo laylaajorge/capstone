@@ -32,6 +32,7 @@ body{
 .d-flex{
   background-color: rgb(208, 50, 81);
   border-radius :7px;
+  margin-left: 80px;
   
 }
 /*change the search button text and backgroud when a user hovers on search button*/
@@ -130,4 +131,8 @@ body{
 .distract h2{
   color:whitesmoke;
   text-align:center;
+}
+
+.Home h6{
+  margin-right: 100px;
 }

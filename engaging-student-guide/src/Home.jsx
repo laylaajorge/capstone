@@ -30,7 +30,10 @@ function Home({setView}){
         <li className="nav-item">
           <a className="nav-link" href="#" onClick={()=>setView('weekly')}> Weekly challenge</a>
         </li>
+       
       </ul>
+      <img className="rewards" src="https://th.bing.com/th/id/OIP.fn-lQEKilSWQEAi43Y1aRAHaFj?rs=1&pid=ImgDetMain" style={{height:"50px",width: "50px"}}></img>
+      <h5><b>100</b></h5>
       <form className="d-flex" role="search">
         <input className="form-control" type="search" placeholder="Search" aria-label="Search"/>
         <button className="btn" type="submit">Search</button>
