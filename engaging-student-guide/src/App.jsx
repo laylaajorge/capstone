@@ -2,10 +2,11 @@
 import React, { useState } from 'react';
 import Home from './routes/Home.jsx';
 import Card from './components/Card.jsx';
+
 //import DistractMe from './routes/DistractMe.jsx';
 //import AppWord from './AppWord.jsx';
 //import Quiz from './Quiz.jsx';
-//import Maze from './routes/Maze.jsx';
+import Memory from './routes/Memory.jsx';
 
 function App() {
   //using useState to set the views of the page and set certain cards to favourites when selected
@@ -44,8 +45,7 @@ function App() {
     },
     {
       id: 2,
-      imageSrc:
-        'https://img.buzzfeed.com/buzzfeed-static/static/2020-09/28/15/asset/fc1f2fac717b/anigif_sub-buzz-29608-1601307260-18_preview.gif?output-quality=auto&output-format=auto&downsize=360:*',
+      imageSrc:"images/read.png",
       title: 'How to succeed in your first BSc tests',
       link: '#',
     },
@@ -133,8 +133,8 @@ function App() {
   
       {view == 'distract' && (
         <div className='distract'>
-          <h2 className = 'oswald-text'>Need a break ? Play some wordle </h2> 
-        <Maze /> 
+          
+        <Memory /> 
         </div>)}
 
       
