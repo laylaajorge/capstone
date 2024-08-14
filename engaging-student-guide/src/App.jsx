@@ -1,9 +1,11 @@
 
 import React, { useState } from 'react';
-import Home from './Home.jsx';
-import Card from './Card.jsx';
-import DistractMe from './DistractMe.jsx';
-import AppWord from './AppWord.jsx';
+import Home from './routes/Home.jsx';
+import Card from './components/Card.jsx';
+//import DistractMe from './routes/DistractMe.jsx';
+//import AppWord from './AppWord.jsx';
+//import Quiz from './Quiz.jsx';
+//import Maze from './routes/Maze.jsx';
 
 function App() {
   //using useState to set the views of the page and set certain cards to favourites when selected
@@ -132,8 +134,10 @@ function App() {
       {view == 'distract' && (
         <div className='distract'>
           <h2 className = 'oswald-text'>Need a break ? Play some wordle </h2> 
-        <AppWord /> 
+        <Maze /> 
         </div>)}
+
+      
     </>
   );
 }
